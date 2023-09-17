@@ -1,0 +1,11 @@
+def isPalindrome(s):
+    return s == s[::-1] #returns boolan value
+
+
+string = input("Enter a word: ")
+word = str.lower(string.split()[0]) #getting only the first word of a string
+
+if isPalindrome(word):
+    print(word,"is Palindrome")
+else:
+    print(word,"is not Palindrome")
